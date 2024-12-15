@@ -1,0 +1,148 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Kiểu chung */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  padding: 10px 0;
+  border-bottom: 1px solid #dddddd;
+  position: relative;
+}
+
+.logo img {
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-cart {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-cart input[type="search"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search-cart button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Taskbar */
+.taskbar ul {
+  list-style: none;
+  text-align: center;
+  background-color: #333;
+}
+
+.taskbar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.taskbar a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.taskbar a:hover,
+.taskbar a:focus {
+  background-color: #555;
+}
+
+/* Main */
+.product-display {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #dddddd;
+  padding: 5px;
+}
+
+.product-info {
+  width: 50%;
+}
+
+.product-info h2 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border: 1px solid #e7e7e7;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form select,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #4cae4c;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .product-display {
+      flex-direction: column;
+  }
+
+  .product-info {
+      width: 100%;
+  }
+}
