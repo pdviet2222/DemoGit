@@ -1,55 +1,64 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Bán Sản Phẩm</title>
+    <title>Coffee Shop</title>
     <link rel="stylesheet" href="/css/homepage.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo ViCy Coffee & Tea">
-        </div>
-        <div class="search-cart">
-            <label for="search"><i class="fas fa-search"></i></label>
-            <input type="search" id="search" placeholder="Tìm kiếm sản phẩm...">
-            <button type="button"><i class="fas fa-shopping-cart"></i></button>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Coffee Haven</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <nav class="taskbar">
-        <ul>
-            <li><a href="index.html"><i class="fas fa-home"></i> Trang Chủ</a></li>
-            <li><a href="products.html"><i class="fas fa-box-open"></i> Sản Phẩm</a></li>
-            <li><a href="support.html"><i class="fas fa-headset"></i> Hỗ Trợ</a></li>
-            <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Đăng Xuất</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section class="product-display">
-            <div class="product-image">
-                <img src="product.jpg" alt="Hình ảnh sản phẩm">
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Coffee Haven</h2>
+            <p>Your perfect cup of coffee, brewed with love.</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="item">
+                <img src="/image/Espresso.jfif" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>$3.50</p>
             </div>
-            <div class="product-info">
-                <h2>Tên Sản Phẩm</h2>
-                <p>Mô tả ngắn về sản phẩm ở đây...</p>
-                <form action="order.php" method="post">
-                    <label for="quantity">Số lượng:</label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="100">
-                    <label for="size">Kích thước:</label>
-                    <select id="size" name="size">
-                        <option value="small">Nhỏ</option>
-                        <option value="medium">Vừa</option>
-                        <option value="large">Lớn</option>
-                    </select>
-                    <button type="submit">Thêm vào giỏ hàng</button>
-                </form>
+            <div class="item">
+                <img src="/image/Latte.jfif" alt="Latte">
+                <h3>Latte</h3>
+                <p>$4.50</p>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 ViCy Coffee & Tea</p>
+            <div class="item">
+                <img src="/image/Cappuccino.jfif" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>$4.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Coffee Haven, we are passionate about crafting the finest coffee for our customers. Using only the freshest beans, we ensure every sip is an experience to remember.</p>
+    </section>
+
+    <footer id="contact" class="footer">
+        <h2>Contact Us</h2>
+        <p>Email: info@coffeehaven.com | Phone: (123) 456-7890</p>
+        <p>&copy; 2024 Coffee Haven. All rights reserved.</p>
     </footer>
 </body>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </html>
